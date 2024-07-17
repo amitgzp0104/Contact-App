@@ -1,0 +1,28 @@
+.create{
+    text-align: center;
+}
+
+.create input{
+    padding: 5px;
+    margin: 5px;
+}
+.create button{
+    color: red;
+    padding: 5px;
+    margin: 5px;
+}
+
+.memberList{
+    margin: 5px;
+}
+
+.memberList li{
+    padding: 5px;
+    margin: 2px;
+}
+
+.memberList button{
+    color: red;
+    padding: 5px;
+    margin: 10px;
+}

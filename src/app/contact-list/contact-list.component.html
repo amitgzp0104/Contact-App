@@ -1,0 +1,25 @@
+<div class="create">
+    <label>Name : </label>
+    <input type="text" name="name" [(ngModel)] = "memberName"/>
+    <br>
+    <label>Phone No: </label>
+    <input type="number" name="phone" [(ngModel)] = "memberPhone" />
+    <br>
+    <label>Email : </label>
+    <input type="email" name="email" [(ngModel)] = "memberEmail"/>
+
+    <br>
+    <button type="submit" (click)="createMember()">Create</button>
+    <br>
+
+</div>
+
+<div class="memberList">
+    <ul>
+        <li *ngFor = "let member of allMember; let i=index">
+            Name: {{member.name}}   Phone: {{member.phone}} Email: {{member.email}}
+            <button type="submit" (click)="deleteMember(i)">Delete</button>
+            <button type="submit" (click)="editMember(i)">Edit</button>
+        </li>
+    </ul>
+</div>
